@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Lorenzo Luci</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#competenze">Competenze</a></li>
+          <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Lorenzo Luci</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#competenze" onclick="toggleMenu()">Competenze</a></li>
+          <li><a href="#progetti" onclick="toggleMenu()">Progetti</a></li>
+          <li><a href="#contatti" onclick="toggleMenu()">Contatti</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/Ellipse profilepng.png"
+          alt="Foto Profilo Lorenzo Luci"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Ciao a tutti, sono</p>
+        <h1 class="title">Lorenzo Luci</h1>
+        <p class="section__text__p2">
+          Digital Marketing Strategist & Web Designer
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/CV Ultimo.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contatti'">
+            Contattami
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Il mio profilo Linkedin"
+            class="icon"
+            onclick="window.open ('https:/www.linkedin.com/in/lucilorenzo/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Il mio profilo Github"
+            class="icon"
+            onclick="location.href='https:/github.com/lorenzoluci92'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Scopri di più!</p>
+      <h2 class="title">About me</h2>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-me.png"
+            alt="Foto Profilo"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon-2"
+              />
+              <h3>Esperienza</h3>
+              <p>2 anni <br />Graphic Design</p>
+              <p>1 anno <br />Digital Marketing Strategist</p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="exducation icon"
+                class="icon-2"
+              />
+              <h3>Formazione</h3>
+              <p>
+                Master in Digital Marketing Technology<br />Laurea in Scienze
+                Politiche e Relazioni Internazionali
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Sono una persona fortemente creativa appassionata di arte e
+              design. Queste due passioni mi hanno spinto a intraprendere un
+              perscorso formativo come Digital Marketer Strategist,
+              parallelamente allo studio dei principali strumenti di Frontend
+              Development, con l’obbiettivo di concretizzare professionalmente
+              questa propensione.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="icona freccia"
+        class="icon arrow"
+        onclick="location.href='./#competenze'"
+      />
+    </section>
+
+    <section id="competenze">
+      <p class="section__text__p1">Un pò sulle mie</p>
+      <h1 class="title">Competenze</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend & Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Wordpress</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Digital Marketing</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Meta Business Manager</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Ads & Analytics</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Seo Copywriting</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TikTok Ads</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#progetti'"
+      />
+    </section>
+
+    <section id="progetti">
+      <p class="section__text__p1">I miei recenti</p>
+      <h2 class="title">Progetti</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/progetto e-commerce.png"
+                alt="il mio progetto e-commerce"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Wordpress E-commerce
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open ('http://tipico.netsons.org/trendseller/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/landin-page.png"
+                alt="landin page"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Landing Page Accattivanti
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.src='./assets/landin-page.png'"
+              >
+                Guarda
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sito food.png"
+                alt="il mio progetto food"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Siti Vetrina Personalizzati
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open.src='./assets/sito food.png'"
+              >
+                Guarda
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contatti'"
+      />
+    </section>
+
+    <section id="contatti">
+      <p class="section__text__p1">Keep In Touch</p>
+      <h1 class="title">Contattami</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:lorenzolucidesign@gmail.com"
+              >lorenzolucidesign@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/lucilorenzo/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#competenze">Competenze</a></li>
+            <li><a href="#progetti">Progetti</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Lorenzo Luci. Tutti i diritti riservati.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
